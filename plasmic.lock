@@ -49,23 +49,18 @@
         },
         {
           "assetId": "aRANRLPd4otPtCuNvZtsnZ",
-          "type": "projectCss",
-          "checksum": "2f3621b0e0b37ddd05b59abaad6cd299"
-        },
-        {
-          "assetId": "aRANRLPd4otPtCuNvZtsnZ",
           "checksum": "291e6d4a978cb2e21949359dff02e656",
           "type": "globalContexts"
         },
         {
           "type": "renderModule",
           "assetId": "56hRMa50je0H",
-          "checksum": "c4449a678ef2f18c1fcd610dc9d18919"
+          "checksum": "d7bfb0d99055cd7e895268d6668a99d8"
         },
         {
           "type": "cssRules",
           "assetId": "56hRMa50je0H",
-          "checksum": "c4449a678ef2f18c1fcd610dc9d18919"
+          "checksum": "d7bfb0d99055cd7e895268d6668a99d8"
         },
         {
           "type": "renderModule",
@@ -246,6 +241,11 @@
           "type": "image",
           "assetId": "tqi-UuGHQPEL",
           "checksum": "8638be4e495551e6e965204dbf2c87cd"
+        },
+        {
+          "assetId": "aRANRLPd4otPtCuNvZtsnZ",
+          "type": "projectCss",
+          "checksum": "2f3621b0e0b37ddd05b59abaad6cd299"
         }
       ],
       "codegenVersion": "0.0.1"

@@ -2475,7 +2475,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       href={"https://www.linkedin.com/company/nextstepcode/"}
                       platform={"nextjs"}
                     >
-                      {" Made by \u00a9Nextstepcode"}
+                      {""}
                     </PlasmicLink__>
                   </Stack__>
                 </div>
