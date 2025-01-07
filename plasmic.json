@@ -483,6 +483,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "27GTtwlekzAr",
+          "name": "LogoKoi",
+          "type": "managed",
+          "projectId": "aRANRLPd4otPtCuNvZtsnZ",
+          "renderModuleFilePath": "plasmic/koi/PlasmicLogoKoi.tsx",
+          "importSpec": {
+            "modulePath": "LogoKoi.tsx"
+          },
+          "cssFilePath": "plasmic/koi/PlasmicLogoKoi.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

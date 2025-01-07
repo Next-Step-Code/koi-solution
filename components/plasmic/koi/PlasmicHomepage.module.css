@@ -1,4 +1,4 @@
-.root {
+.koi {
   display: grid;
   position: relative;
   width: 100%;
@@ -16,11 +16,11 @@
     minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
   padding: 0px;
 }
-.root > * {
+.koi > * {
   grid-column: 4;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .root > * {
+  .koi > * {
     grid-column: 4;
   }
 }
@@ -148,18 +148,11 @@
     justify-content: center;
   }
 }
-.img__joxno {
-  object-fit: cover;
-  max-width: 100%;
-  width: 120px;
+.logoKoi:global(.__wab_instance) {
   flex-shrink: 0;
 }
-.img__joxno > picture > img {
-  object-fit: cover;
-}
 @media (min-width: 0px) and (max-width: 768px) {
-  .img__joxno {
-    width: 40px;
+  .logoKoi:global(.__wab_instance) {
     margin-top: 8px;
     margin-left: calc(12px + 20px) !important;
     flex-shrink: 0;

@@ -66,6 +66,7 @@ import {
   usePlasmicInvalidate
 } from "@plasmicapp/react-web/lib/data-sources";
 
+import LogoKoi from "../../LogoKoi"; // plasmic-import: 27GTtwlekzAr/component
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import { FormWrapper } from "@plasmicpkgs/antd5/skinny/SchemaForm";
@@ -97,11 +98,12 @@ type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
-  root?: Flex__<"div">;
+  koi?: Flex__<"div">;
   home?: Flex__<"div">;
   hero?: Flex__<"div">;
   nav?: Flex__<"div">;
   frame8?: Flex__<"div">;
+  logoKoi?: Flex__<typeof LogoKoi>;
   frame7?: Flex__<"div">;
   yacht1?: Flex__<"div">;
   frame354?: Flex__<"div">;
@@ -347,8 +349,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
+          data-plasmic-name={"koi"}
+          data-plasmic-override={overrides.koi}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
@@ -358,7 +360,7 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            sty.root
+            sty.koi
           )}
         >
           <Stack__
@@ -385,26 +387,10 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.frame8)}
                 >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__joxno)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "40px"
-                        : "120px"
-                    }
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/koi/images/group2Png.png",
-                      fullWidth: 121,
-                      fullHeight: 120,
-                      aspectRatio: undefined
-                    }}
+                  <LogoKoi
+                    data-plasmic-name={"logoKoi"}
+                    data-plasmic-override={overrides.logoKoi}
+                    className={classNames("__wab_instance", sty.logoKoi)}
                   />
 
                   <Stack__
@@ -2489,12 +2475,13 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
+  koi: [
+    "koi",
     "home",
     "hero",
     "nav",
     "frame8",
+    "logoKoi",
     "frame7",
     "yacht1",
     "frame354",
@@ -2605,6 +2592,7 @@ const PlasmicDescendants = {
     "hero",
     "nav",
     "frame8",
+    "logoKoi",
     "frame7",
     "yacht1",
     "frame354",
@@ -2714,6 +2702,7 @@ const PlasmicDescendants = {
     "hero",
     "nav",
     "frame8",
+    "logoKoi",
     "frame7",
     "yacht1",
     "frame354",
@@ -2722,8 +2711,9 @@ const PlasmicDescendants = {
     "frame3",
     "sliderCarousel"
   ],
-  nav: ["nav", "frame8", "frame7"],
-  frame8: ["frame8", "frame7"],
+  nav: ["nav", "frame8", "logoKoi", "frame7"],
+  frame8: ["frame8", "logoKoi", "frame7"],
+  logoKoi: ["logoKoi"],
   frame7: ["frame7"],
   yacht1: ["yacht1", "frame354", "frame352", "frame259", "frame3"],
   frame354: ["frame354", "frame352", "frame259", "frame3"],
@@ -3034,11 +3024,12 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  koi: "div";
   home: "div";
   hero: "div";
   nav: "div";
   frame8: "div";
+  logoKoi: typeof LogoKoi;
   frame7: "div";
   yacht1: "div";
   frame354: "div";
@@ -3192,7 +3183,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "koi") {
     func.displayName = "PlasmicHomepage";
   } else {
     func.displayName = `PlasmicHomepage.${nodeName}`;
@@ -3202,13 +3193,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicHomepage = Object.assign(
   // Top-level PlasmicHomepage renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("koi"),
   {
     // Helper components rendering sub-elements
     home: makeNodeComponent("home"),
     hero: makeNodeComponent("hero"),
     nav: makeNodeComponent("nav"),
     frame8: makeNodeComponent("frame8"),
+    logoKoi: makeNodeComponent("logoKoi"),
     frame7: makeNodeComponent("frame7"),
     yacht1: makeNodeComponent("yacht1"),
     frame354: makeNodeComponent("frame354"),
